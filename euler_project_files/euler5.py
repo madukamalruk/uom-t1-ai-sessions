@@ -1,3 +1,9 @@
+"""
+Time Complexity: O(n), each lcm is O(log n)
+Space Complexity: O(1)
+"""
+
+
 def smallest_multiple(n):
     """Finds the smallest positive number that is evenly divisible by all of the numbers from 1 to n."""
     from math import gcd
@@ -8,4 +14,5 @@ def smallest_multiple(n):
 
     return reduce(lcm, range(1, n + 1))
 
-print(smallest_multiple(20))    
+
+print(smallest_multiple(20))

@@ -1,3 +1,9 @@
+"""
+Time Complexity: O(10^{2n}), where n is the number of digits
+Space Complexity: O(1)
+"""
+
+
 def largest_palindrome_product(n):
     """Find the largest palindrome made from the product of two n-digit numbers."""
     if n < 1:

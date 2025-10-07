@@ -1,3 +1,9 @@
+"""
+Time Complexity: O(sqrt(n))
+Space Complexity: O(1)
+"""
+
+
 def largest_prime_factor(n):
     factor = 2
     while factor * factor <= n:

@@ -1,3 +1,9 @@
+"""
+Time Complexity: O(n log log n)
+Space Complexity: O(n)
+"""
+
+
 def summation_of_primes(n):
     sieve = [True] * (n + 1)
     sieve[0] = sieve[1] = False
@@ -6,4 +12,6 @@ def summation_of_primes(n):
             for j in range(i*i, n + 1, i):
                 sieve[j] = False
     return sum(i for i, is_prime in enumerate(sieve) if is_prime)
+
+
 print(summation_of_primes(2000000))
